@@ -1,4 +1,4 @@
-package example.day02._2과제;
+package example.day02._3과제;
 
 import org.springframework.web.bind.annotation.*;
 

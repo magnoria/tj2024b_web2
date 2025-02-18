@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
-@RestController
-@RequestMapping("/day01")
+@RestController //1. 스프링 컨테이너 빈등록 // 2.HTTp 서블릿 지원// 3. ResponseBody 포함
+@RequestMapping("/day01") // 1. 지정된 클래스내 메소드드들의 http 공통 URL 정의 // 교수님과 다른것 vlaue = "/day01/task/board"를 넣은게 다름
 public class BoardController {
 
     //1. 글쓰기
-    @PostMapping("/task/board")
+    @PostMapping("/task/board") // 교수님과 다른것 공통으로 했으니 생략했음
     public boolean board1(){return true;}
 
     //2. 전체 글 조회
@@ -29,7 +29,7 @@ public class BoardController {
     }//f end
 
     //3. 개별 글 조회
-    @GetMapping("/task/board/view")
+    @GetMapping("/task/board/view") // 여기 view 만 넣음
     public Map< String, String> board3(){
         Map< String , String> map1 = new HashMap<>();
         map1.put("bno", "1");

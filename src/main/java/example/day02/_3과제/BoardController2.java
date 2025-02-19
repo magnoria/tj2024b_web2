@@ -18,7 +18,7 @@ public class BoardController2 {
         this.boardDao = boardDao;
     }
 
-
+    //http://192.168.40.18:8080/day02/task2/board 확인용
     @PostMapping("/day02/task2/board")
     public boolean tast1(@RequestBody BoardDto boardDto ){ // 2.body 값을 함수 매개변수로 매핑한다.
 

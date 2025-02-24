@@ -1,5 +1,4 @@
-package example.day04.model.dto;
-
+package example.day04task.model.dto;
 
 import lombok.*;
 

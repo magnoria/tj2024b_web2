@@ -1,0 +1,44 @@
+[ 스프링 과제4 ]
+day03 -> _과제 폴더에서 진행
+주제 : 학생 점수 관리 CRUD
+    1. AppStart 클래스 생성
+    2. StudentController 클래스 생성
+    3. StudentService 클래스
+    4. StudentMapper 인터페이스
+    5. StudentDto 클래스 생성
+    6. StudentMapper .xml파일 없이 @SQL 어노테이션 이용하여 SQl 매핑 [ 임의의테이블명 생성 : Students ]
+    -. 각 URL 매핑 만들기 , REST 명세서
+        1. 학생점수등록          POST       "/day04/Student"
+            요청자료 : { "name" : "" , "kor" : "" , "math" : "" }
+            응답자료 : true 또는 false
+
+        2. 전체 글 조회      GET        "/day04/Student"
+            요청자료 : x
+            응답자료 : [ { "sno": "" ,"name" : "" , "kor" : "" , "math" : ""  } ,
+                        { "bno": "" ,"name" : "" , "kor" : "" , "math" : ""  }  ]
+
+
+        4.  학생 개별  수정      PUT        "/day04/Student"
+            요청자료 : { "sno": "" ,"name" : "" , "kor" : "" , "math" : ""  }
+            응답자료 : true 또는 false
+
+        5.  학생 개별 삭제      DELETE     "/day04/Student"
+            요청자료 : ?bno=1
+            응답자료 : 0 또는 1
+
+
+[1] 데이터 베이스 , 테이블 생성
+
+create table students( # 테이블명은 임의로 하되 저장할 데이터와 의미있는 이름으로 정하기.
+	sno int auto_increment , 		# 게시물번호
+    name varchar(100),			# 게시물제목
+    kor int,			# 게시물작성자
+    math int,				# 게시물비밀번호
+    constraint primary key( sno )	# 게시물번호를 pk로 설정
+);
+
+
+[2] MVC 패턴/ 패키지구성 , 기본DTO , AppStart
+
+
+제출 : 카카오톡방에 ip 제출

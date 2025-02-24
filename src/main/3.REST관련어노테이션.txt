@@ -1,4 +1,3 @@
-
 [ REST ]
     1. 웹의 자원을 관리하는 아키텍처( 설계 구조 )
     2. 자원( Resources ) , 행동(Method)  , 표현 개념
@@ -40,5 +39,3 @@
     -
     @RequestParam           vs  @RequestBody        vs      @ModelAttribute(생략가능)
     queryString                 body                        form-Data
-
-

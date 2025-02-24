@@ -29,10 +29,10 @@ public class BoardController {
 
     //2. 개별조회
     @GetMapping("/view")
-    public BoardDto find(@RequestParam("id") int id){
+    public BoardDto find(@RequestParam("bno") int bno){
         System.out.println("BoardController.findAll");
 
-        return boardService.find(id);
+        return boardService.find(bno);
     }//f end
 
     //3. 전체조회
@@ -51,12 +51,12 @@ public class BoardController {
         return boardService.update(boardDto);
     }
     //5. 개별삭제
-    @Delete("")
-    public boolean delete(@RequestParam("id")int id){
+    @DeleteMapping("")
+    public boolean delete(@RequestParam("bno")int bno){
         System.out.println("BoardController.delete");
-        System.out.println("id = " + id);
+        System.out.println("bno = " + bno);
 
-        return  boardService.delete(id);
+        return  boardService.delete(bno);
 
     }// f end
 

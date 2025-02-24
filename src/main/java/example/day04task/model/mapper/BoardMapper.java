@@ -14,7 +14,7 @@ public interface BoardMapper {
 
     //[2]
     @Select(" select * from day04board where bno = #{bno}")
-    public BoardDto find( int id);
+    public BoardDto find( int bno);
 
     //[3]
     @Select(" select * from day04board")
@@ -25,7 +25,7 @@ public interface BoardMapper {
     public boolean update( BoardDto boardDto);
 
     //[5]
-    @Delete(" delete from day04board where bno = #{bno}")
-    public boolean delete(int id);
+    @Delete("delete from day04board where bno = #{bno}")
+    public boolean delete(int bno);
 
 }// f end

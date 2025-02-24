@@ -29,9 +29,9 @@ public class BoardService {
 
     //2. 개별조회
 
-    public BoardDto find(int id) {
+    public BoardDto find(int bno) {
         System.out.println("BoardController.findAll");
-        BoardDto result = boardMapper.find(id);
+        BoardDto result = boardMapper.find(bno);
 
         return result;
     }//f end
@@ -56,11 +56,11 @@ public class BoardService {
     }
     //5. 개별삭제
 
-    public boolean delete(int id) {
+    public boolean delete(int bno) {
         System.out.println("BoardController.delete");
-        System.out.println("id = " + id);
+        System.out.println("bno = " + bno);
 
-        boolean result = boardMapper.delete(id);
+        boolean result = boardMapper.delete(bno);
 
         return result;
 

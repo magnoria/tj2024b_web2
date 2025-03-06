@@ -34,4 +34,7 @@ import Example2 from './example/2_컴포넌트/Example2.jsx'
 
 //Task
 import Task from './example/2_컴포넌트/task.jsx'
-root.render(<Task/>)
+//root.render(<Task/>)
+
+import Example1 from './example/3_훅/Example1.jsx'
+root.render(<Example1/>)

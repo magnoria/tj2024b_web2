@@ -29,12 +29,24 @@ import Example1 from './example/2_컴포넌트/Example1.jsx'
 //root.render(<Example1/>)
 
 //day02: 컴포넌트의 Props 활용
-import Example2 from './example/2_컴포넌트/Example2.jsx'
+//import Example2 from './example/2_컴포넌트/Example2.jsx'
 //root.render(<Example2/>)
 
 //Task
 import Task from './example/2_컴포넌트/task.jsx'
 //root.render(<Task/>)
 
-import Example1 from './example/3_훅/Example1.jsx'
-root.render(<Example1/>)
+//import Example1 from './example/3_훅/Example1.jsx'
+//root.render(<Example1/>)
+
+// import Example2 from './example/3_훅/Example2.jsx'
+// root.render(<Example2/>)
+
+// import Example3 from './example/3_훅/Example3.jsx'
+// root.render(<Example3/>)
+
+// import Task1 from './example/3_훅/Task1.jsx'
+// root.render(<Task1/>)
+
+import Task2 from './example/3_훅/Task2.jsx'
+root.render(<Task2/>)

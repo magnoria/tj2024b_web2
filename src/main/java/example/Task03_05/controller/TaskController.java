@@ -1,7 +1,9 @@
-package example.Task03_05;
+package example.Task03_05.controller;
 
 
+import example.Task03_05.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -20,7 +22,10 @@ public class TaskController extends TaskService {
     public void method1(){};
 
 
+    @PostMapping("")
     public static void main(String[] args) {
+
+
         //2. 생성자 만들어서 사용
        // TaskService task = new TaskService();
         //task.method1();

@@ -55,5 +55,14 @@ const root = createRoot(document.querySelector('#root'))
 // root.render(<Example1/>)
 
 // 위에 존재하는 import App 샘플 주석처리 하기
-import App from './example/5_라우터/Exalple1.jsx'
-root.render(<App/>)
+// import App from './example/5_라우터/Exalple1.jsx'
+// root.render(<App/>)
+
+// import Example1 from './example/6_AXIOS/Example1'
+// root.render(<Example1/>)
+
+// import Exalple2 from './example/6_AXIOS/Example2'
+// root.render(<Exalple2/>)
+
+import Taskd from './example/6_AXIOS/Task'
+root.render(<Taskd/>)

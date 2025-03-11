@@ -1,3 +1,6 @@
+
+------------------------------------------------day05-----------------------
+
 ---- 학생 테이블 샘플 데이터 삽입
 ---- INSERT INTO student (name, kor, math) VALUES ('김철수', 90, 85);
 ---- INSERT INTO student (name, kor, math) VALUES ('이영희', 78, 92);
@@ -14,4 +17,11 @@
 --INSERT INTO student_score (sno, subject, score) VALUES (2, '국어', 78);
 --INSERT INTO student_score (sno, subject, score) VALUES (2, '수학', 92);
 
-insert into practice(name, number) values ('이름' , 'test');
+-----------------------------------------------------------------
+
+--------------------------------------------------day08--------------------------------
+
+
+insert into productsample( name , price , comment ) values ( '코카콜라' , 1000 , '맛있는 코카콜라' );
+insert into productsample( name , price , comment ) values ( '사이다' , 1700 , '제로 사이다입니다.' );
+insert into productsample( name , price , comment ) values ( '환타' , 2000 , '새로나온 환타 맛 입니다.' );

@@ -64,5 +64,9 @@ const root = createRoot(document.querySelector('#root'))
 // import Exalple2 from './example/6_AXIOS/Example2'
 // root.render(<Exalple2/>)
 
-import Taskd from './example/6_AXIOS/Task'
-root.render(<Taskd/>)
+// import Taskd from './example/6_AXIOS/Task'
+// root.render(<Taskd/>)
+
+//day06 : 라우터 컴포넌트 렌더링
+import App from './example/7_AXIOS2/App'
+root.render(<App/>)

@@ -1,4 +1,4 @@
---
+----------------------------day05-------------------------------------
 ---- 학생 테이블
 --DROP TABLE if EXISTS student_score;
 --DROP TABLE if EXISTS student;
@@ -22,17 +22,13 @@
 --);
 --
 
-drop database if exists springweb;
+-------------------------------day08------------------------
 
-create database springweb;
-
-use springweb;
-
-create table practice(
-	tno int auto_increment,
-    name varchar(8),
-    number varchar(20),
-
-    primary key(tno)
-
+DROP TABLE if EXISTS productsample;
+create table productsample(
+   id int auto_increment ,
+    name varchar(20) ,
+    price int ,
+    comment longtext ,
+    constraint primary key ( id )
 );

@@ -2,7 +2,7 @@ package example.day08.model.dto;
 
 
 import lombok.*;
-import org.apache.ibatis.annotations.Select;
+
 
 @Getter@Setter
 @ToString@Builder

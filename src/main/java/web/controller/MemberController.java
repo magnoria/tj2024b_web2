@@ -36,8 +36,9 @@ public class MemberController {
     // http://localhost:8080/api/member/singup
     //Content-Type : application/json
     //{ "mid":"test1" , "mpwd" :"1234 ", "mname": "유재석"}
-    @PostMapping("/singup")
-    public boolean sigunUp(@RequestBody MemberDto memberDto) {
+    @PostMapping("/signup")
+   // public boolean sigunUp(@RequestBody MemberDto memberDto) { //JSON @RequestBody 명시
+    public boolean sigunUp(MemberDto memberDto) { // multipart/form-data 사용시 @RequestBody 생략
         System.out.println("MemberController.sigunUp");
         System.out.println("memberDto = " + memberDto);
         //return false;

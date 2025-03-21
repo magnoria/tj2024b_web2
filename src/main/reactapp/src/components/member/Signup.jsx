@@ -7,7 +7,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 export default function Signup(Props){
     // (1) 입력받은 값들을 저장하는 state변수선언, const [변수명, set변수명] = useState(초기값)
     // memberInfo는 일반적으로 (자바)memberDto의 멤버변수와 동일하게
-    const [ memberInfo , setMemberInfo] = useState( {mid : "" , mpwd : "" , mname : "", }) 
+    const [ memberInfo , setMemberInfo] = useState( {mid : "" , mpwd : "" , mname : ""}) 
 
     // (2) 입력받은 값들을 state 렌더링 하는 함수 , event :onChange 결과 정보 , event.target : 해당함수를 실행싵킨 마크업
     const onIputChange = (event) => {

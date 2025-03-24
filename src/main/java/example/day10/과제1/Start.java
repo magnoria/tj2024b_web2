@@ -49,11 +49,10 @@ public class Start {
             if (choose == 1){
 
                     if (true == musicrun.state){
-                        System.out.println("음악종료");
                         musicrun.state = false;
 
+
                     } else if(false == musicrun.state){
-                        System.out.println("음악 시작");
                         musicrun.state = true;
                         thread.start();
 
@@ -61,10 +60,10 @@ public class Start {
 
             } else if (choose == 2) {
                 if (true == webSurfing.state ) {
-                    System.out.println("웹서핑 종료");
+
                     webSurfing.state = false;
                 } else if(false == webSurfing.state){
-                    System.out.println("웹서핑 시작");
+
                     webSurfing.state = true;
                     webSurfing.start();
                 }

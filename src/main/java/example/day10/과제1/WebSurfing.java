@@ -7,9 +7,14 @@ public class WebSurfing extends Thread {
     public void run() {
 
         try {
-            while (state){
-                Thread.sleep(1000);
-                System.out.println("웹서핑 중...");
+            while (true){
+                if (state) {
+                    Thread.sleep(1000);
+                    System.out.println("웹서핑 중...");
+                }else {
+                    System.out.println("웹서핑 종료");
+                    break;
+                }
             }
 
         } catch (Exception e) {

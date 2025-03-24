@@ -6,11 +6,16 @@ public class Music implements Runnable {
     @Override
     public void run() {
         try {
-            while (state) {
-                Thread.sleep(1000);
-                System.out.println("음악재생중...");
-
+            while (true) {
+                if( state ) {
+                    Thread.sleep(1000);
+                    System.out.println("음악재생중...");
+                }else{
+                    System.out.println("음악종료");
+                    break;
+                }
             }
+
 
         } catch (Exception e) {
             System.out.println(e);

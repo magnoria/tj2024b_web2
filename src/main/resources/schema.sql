@@ -50,3 +50,10 @@ create table productsample(
     comment longtext ,
     constraint primary key ( id )
 );
+-------------------------------------과제------------------
+DROP TABLE IF EXISTS day11products;
+CREATE TABLE day11products (
+        product_id INT PRIMARY KEY AUTO_INCREMENT, -- 상품 ID (자동 증가)
+product_name VARCHAR(255) NOT NULL,        -- 상품명
+stock_quantity INT NOT NULL                -- 재고 수량
+        );

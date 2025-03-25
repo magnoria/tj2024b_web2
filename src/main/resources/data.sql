@@ -35,3 +35,12 @@ INSERT INTO student_score (sno, subject, score) VALUES (2, '수학', 92);
 insert into productsample( name , price , comment ) values ( '코카콜라' , 1000 , '맛있는 코카콜라' );
 insert into productsample( name , price , comment ) values ( '사이다' , 1700 , '제로 사이다입니다.' );
 insert into productsample( name , price , comment ) values ( '환타' , 2000 , '새로나온 환타 맛 입니다.' );
+
+-----------------------------------------과제---------------
+INSERT INTO day11products (product_name, stock_quantity) VALUES
+        ('무선 이어폰', 25),
+                ('스마트워치', 12),
+                ('게이밍 키보드', 30),
+                ('기계식 마우스', 8),
+                ('휴대용 충전기', 15);
+

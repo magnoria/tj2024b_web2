@@ -35,13 +35,13 @@ public class Task {
         //4.
 //        과일들.stream().sorted().forEach(x-> System.out.println(x));
         //5.
-//        과일들.stream().forEach(x-> System.out.println(x));
+//        과일들.stream().forEach(System.out :: println);
         //6.
-//        과일들.stream().map(x ->x).forEach(x-> System.out.println(x));
+//        과일들.stream().map(x ->x).forEach( System.out :: println  );
         //7.
-//        과일들.stream().filter(x-> x=="바나나" || x=="대추").forEach(x-> System.out.println(x));
+//        과일들.stream().filter(x-> x=="바나나" || x=="대추").forEach(System.out :: println);
         //8.
-        과일들.stream().sorted(Comparator.reverseOrder()).forEach(x-> System.out.println(x));
+        과일들.stream().sorted(Comparator.reverseOrder()).forEach(System.out :: println);
 
     }
 

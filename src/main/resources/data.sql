@@ -36,7 +36,7 @@ insert into productsample( name , price , comment ) values ( '코카콜라' , 10
 insert into productsample( name , price , comment ) values ( '사이다' , 1700 , '제로 사이다입니다.' );
 insert into productsample( name , price , comment ) values ( '환타' , 2000 , '새로나온 환타 맛 입니다.' );
 
------------------------------------------과제---------------
+-----------------------------------------과제 day 11---------------
 INSERT INTO day11products (product_name, stock_quantity) VALUES
         ('무선 이어폰', 25),
                 ('스마트워치', 12),
@@ -44,3 +44,7 @@ INSERT INTO day11products (product_name, stock_quantity) VALUES
                 ('기계식 마우스', 8),
                 ('휴대용 충전기', 15);
 
+-----------------------------------------과제 day 13---------------
+INSERT INTO day13users (name, money) VALUES
+('서장훈', 500000),
+('신동엽', 300000);
